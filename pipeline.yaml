@@ -1,9 +1,0 @@
-name: github-triggered-pipeline
-jobs:
-  build:
-    script:
-      - echo "Building from GitHub push!"
-  test:
-    depends_on: [build]
-    script:
-      - echo "Running tests securely in Docker!"
